@@ -133,7 +133,7 @@ span {
   color: var(--second-bg--color);
   letter-spacing: 0.1rem;
   font-weight: 600;
-  transition: 0.5 ease;
+  transition: 0.5s ease;
 }
 
 .btn:hover {
@@ -189,8 +189,7 @@ span {
   border-radius: 2rem;
   text-align: center;
   border: 0.2rem solid var(--bg-color);
-  transition: 0.5 ease;
-  
+  transition: 0.5s ease;
 }
 
 .services-container .services-box:hover {
@@ -211,4 +210,81 @@ span {
 .services-box p {
   font-size: 1.6rem;
   margin: 1rem 0 3rem;
+}
+
+.projects {
+  background: var(--second-bg--color);
+}
+
+.projects h2 {
+  margin-bottom: 4rem;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.project-container .project-box {
+  display: flex;
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+  overflow: hidden;
+}
+
+.project-box img {
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+.project-box:hover img {
+  transform: scale(1.1);
+}
+
+.project-box .project-layer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0 4rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  transform: translateY(100%);
+  transition: 0.5s ease;
+}
+
+.project-box:hover .project-layer {
+  transform: translateY(0);
+}
+
+.project-layer h4 {
+  font-size: 3rem;
+}
+
+.project-layer p {
+  font-size: 1.6rem;
+  margin: 0.3rem 0 1rem;
+}
+
+.project-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: var(--text-color);
+}
+
+.project-layer a i {
+  font-size: 2rem;
+  color: var(--second-bg--color);
 }
