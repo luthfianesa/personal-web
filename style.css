@@ -377,7 +377,15 @@ span {
     padding: 10rem 3% 2rem;
   }
 
-  .footer {
+  .services {
+    padding-bottom: 7rem;
+  }
+
+  .projects {
+    padding-bottom: 7rem;
+  }
+
+  .projects .footer {
     padding: 2rem 3%;
   }
 }
@@ -436,5 +444,15 @@ span {
     margin-top: 4rem;
   }
 
-  
+  .services h2 {
+    margin-bottom: 3rem;
+  }
+
+  .projects h2 {
+    margin-bottom: 3rem;
+  }
+
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
