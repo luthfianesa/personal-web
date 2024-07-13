@@ -48,3 +48,12 @@ ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
 ScrollReveal().reveal(".home-img, .services-container, .project-box, .contact form ", { origin: "bottom" });
 ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
 ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
+
+// Type Writing
+const typed = new Typed(".multiple-text", {
+  strings: ["Front-End Developer"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 100,
+  loop: true,
+});
