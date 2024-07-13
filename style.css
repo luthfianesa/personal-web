@@ -492,6 +492,11 @@ span {
     font-size: 50%;
   }
 
+  .strava {
+    position: relative;
+    top: 2px;
+  }
+
   .contact form .input-box input {
     width: 100%;
   }
