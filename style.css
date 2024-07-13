@@ -60,7 +60,7 @@ header {
 nav a {
   font-size: 1.7rem;
   color: var(--text-color);
-  margin-left: 4rem;
+  margin-left: 2rem;
   transition: 0.3s;
 }
 
@@ -132,16 +132,27 @@ span {
   border: 0.2rem solid var(--main-color);
   border-radius: 50%;
   font-size: 2rem;
-  color: var(--main-color);
+  /* color: var(--main-color); */
+  color: var(--text-color);
   margin: 3rem 1.5rem 3rem 0;
   transition: 0.5s ease;
 }
 
 .social-media a:hover {
   background: var(--main-color);
-  color: var(--second-bg--color);
+  /* color: var(--second-bg--color); */
   box-shadow: 0 0 1rem var(--main-color);
 }
+
+.strava img {
+  width: 20px;
+}
+
+/* .strava img:hover {
+  background: var(--main-color);
+  color: var(--second-bg--color);
+  box-shadow: 0 0 1rem var(--main-color);
+} */
 
 .btn {
   display: inline-block;
