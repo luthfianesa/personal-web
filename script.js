@@ -57,3 +57,16 @@ const typed = new Typed(".multiple-text", {
   backDelay: 100,
   loop: true,
 });
+
+// Read More About Me
+document.getElementById("read-more-btn").addEventListener("click", function (event) {
+  event.preventDefault();
+  var extraContent = document.getElementById("extra-content");
+  if (extraContent.classList.contains("hidden")) {
+    extraContent.classList.remove("hidden");
+    this.textContent = "Read Less";
+  } else {
+    extraContent.classList.add("hidden");
+    this.textContent = "Read More";
+  }
+});

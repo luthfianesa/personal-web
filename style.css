@@ -195,6 +195,10 @@ span {
   margin: 2rem 0 3rem;
 }
 
+.hidden {
+  display: none;
+}
+
 .services h2 {
   margin-bottom: 5rem;
 }
